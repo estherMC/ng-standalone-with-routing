@@ -16,9 +16,12 @@ const routes: Route[] = [
   {
     path: 'dashboard',
     loadChildren: () =>
-      import('./dashboard/dashboard-routing.module').then(
-        (mod) => mod.DashboardRoutingModule
+      import('./dashboard/routes').then(
+        (mod) => mod.DASHBOARD_ROUTES
       ),
+      // import('./dashboard/dashboard-routing.module').then(
+      //   (mod) => mod.DashboardRoutingModule
+      // ),
   },
 ];
 
